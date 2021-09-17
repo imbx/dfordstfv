@@ -42,7 +42,7 @@ namespace BoxScripts
         }
 
 
-        public void GenerateGUID()
+        public void GenerateGUID(string idstr = null)
         {
             Identifier = Guid.NewGuid();
             IdentifierStr = Identifier.ToString();

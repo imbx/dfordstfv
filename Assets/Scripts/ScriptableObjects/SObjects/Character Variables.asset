@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02175d4295d4c4633b1a56612cfab146, type: 3}
-  m_Name: EntityData
+  m_Script: {fileID: 11500000, guid: 410388d0ee33f4f86ba668a2035664d2, type: 3}
+  m_Name: Character Variables
   m_EditorClassIdentifier: 
-  Speed: 6
-  RunSpeedMultiplier: 1.5
+  Speed: 4.5
+  Gravity: 200
   VisionRange: 50
+  BobbingSpeed: 13
+  BobbingAmount: 0.025
   CameraRotations: {x: 0, y: 0, z: 0}
   CanMove: 1
   CanLook: 1

@@ -17,40 +17,24 @@ public class CController : MonoBehaviour
     public ControllerData m_PlayerMovement;
 
     [Header("Stats")]
-    [SerializeField] private float l_gravity = 9.8f;
-
-
-    public float boobingSpeed = 14f;
-    public float bobbingAmount = 0.05f;
     private float timer = 0;
     private float defaultYPos = 0;
 
     private bool isMoving = false;
-
-    public Collider playerCollider;
-    public bool isOnCarpets;
-
-    RaycastHit hit;
-    // public AudioSource audioSource;
-
-    // public AudioClip[] pasosNormales;
-    // public AudioClip[] pasosAlfombra;
-    // AudioClip previousClip;
-
     float lastTranslate = 0;
     int bobbingDirection = 1;
 
     void OnEnable()
     {
         m_characterController = GetComponent<CharacterController>();
+        defaultYPos = m_PitchController.localPosition.y;
+
         if(m_CVars.isLoadingData) 
         {
             transform.position = m_CVars.PlayerPosition;
             transform.rotation = Quaternion.Euler(0, m_Yaw, 0);
             m_PitchController.localRotation = Quaternion.Euler(m_Pitch, 0, 0);
-            defaultYPos = m_PitchController.localPosition.y;
         }
-        
     }
 
     void FixedUpdate()
@@ -64,42 +48,6 @@ public class CController : MonoBehaviour
         HeadBobbing();
     }
     #region UpdateFunctions
-
-    bool CheckOnCarpet()
-    {
-        if (hit.collider != null && hit.collider.tag == "Alfombra")
-        {
-            return true;
-        }
-        else return false;
-    }
-    /*AudioClip GetClipFromArray(AudioClip[] clipArray)
-    {
-        int atempts = 3;
-        AudioClip selectedClip = clipArray[Random.Range(0, clipArray.Length - 1)];
-
-        while (selectedClip == previousClip && atempts > 0)
-        {
-            selectedClip= clipArray[Random.Range(0, clipArray.Length - 1)];
-            atempts--;
-        }
-        previousClip = selectedClip;
-        return selectedClip;
-    }*/
-    void TriggerNextClip()
-    {
-        /*audioSource.pitch = Random.Range(0.9f, 1.1f);
-        audioSource.volume = Random.Range(0.8f, 1f);
-
-        if (isOnCarpets)
-        {
-            audioSource.PlayOneShot(GetClipFromArray(pasosAlfombra), 1);
-        }
-        else
-        {
-            audioSource.PlayOneShot(GetClipFromArray(pasosNormales), 1);
-        }*/
-    }
     private void CameraMovement()
     {
         Vector2 mouseAxis = m_PlayerMovement.CameraAxis;
@@ -122,7 +70,7 @@ public class CController : MonoBehaviour
 
         l_Movement = l_Forward * l_Axis.x;
         l_Movement += l_Right * l_Axis.y;
-        l_Movement += transform.up * -1 * l_gravity * Time.deltaTime;
+        l_Movement += transform.up * -1 * m_CVars.Gravity * Time.deltaTime;
 
         isMoving = Mathf.Abs(l_Movement.x) > 0.1f || Mathf.Abs(l_Movement.z) > 0.1f;
 
@@ -140,10 +88,10 @@ public class CController : MonoBehaviour
         if(isMoving)
         {
             float waveslice = Mathf.Sin(timer);
-            timer += Time.deltaTime * boobingSpeed;
+            timer += Time.deltaTime * m_CVars.BobbingSpeed;
 
             Vector2 l_Axis = m_PlayerMovement.Axis;
-            float translateChange = waveslice * bobbingAmount;
+            float translateChange = waveslice * m_CVars.BobbingAmount;
             float totalAxes = Mathf.Abs(l_Axis.x) + Mathf.Abs(l_Axis.y);
             totalAxes = Mathf.Clamp (totalAxes, 0.0f, 1.0f);
             translateChange = totalAxes * translateChange;
@@ -152,14 +100,10 @@ public class CController : MonoBehaviour
             if (bobbingDirection == 1 && translateChange < lastTranslate)
             {
                 bobbingDirection = -1;
-                //suena sonido playoneshot
-                // TriggerNextClip(); this was uncommented
             }
             if (bobbingDirection == -1 && translateChange > lastTranslate)
             {
                 bobbingDirection = 1;
-                //suena sonido
-                //TriggerNextClip();
             }
 
             lastTranslate = translateChange;
@@ -177,7 +121,7 @@ public class CController : MonoBehaviour
             m_PitchController.localPosition =
                 new Vector3(
                     m_PitchController.localPosition.x,
-                    Mathf.Lerp(m_PitchController.localPosition.y, defaultYPos, Time.deltaTime * boobingSpeed),
+                    Mathf.Lerp(m_PitchController.localPosition.y, defaultYPos, Time.deltaTime * m_CVars.BobbingSpeed),
                     m_PitchController.localPosition.z
                     );
         }

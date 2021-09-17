@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c4eb9af08cf42bf9dc80c5f42afd25, type: 3}
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
-  MinPitch: -35
-  MaxPitch: 105
-  YawSpeed: 90
-  PitchSpeed: 45
+  MinPitch: -55
+  MaxPitch: 50
+  YawSpeed: 11
+  PitchSpeed: 5.5
   InvertY: 1
   InvertX: 0

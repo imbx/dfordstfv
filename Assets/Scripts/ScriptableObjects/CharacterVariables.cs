@@ -2,9 +2,17 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class CharacterVariables : ScriptableObject, ISerializationCallbackReceiver {
-    public float Speed = 6f;
-    public float RunSpeedMultiplier = 1.5f;
+    [Header("Basic Vars")]
+    public float Speed = 4.5f;
+    public float Gravity = 200f;
     public float VisionRange = 50f;
+
+    [Header("Head bobbing")]
+    public float BobbingSpeed = 13;
+    public float BobbingAmount = 0.025f;
+
+    [Header("Others")]
+
     public Vector3 CameraRotations = Vector3.zero;
     public bool CanMove = true;
     public bool CanLook = true;
