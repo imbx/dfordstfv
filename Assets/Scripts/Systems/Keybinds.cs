@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Keybinds : MonoBehaviour {
 
-    public PrimaryController controller;
+    public ControllerData controller;
     InputAction movementAction;
     InputAction lookAction;
     bool        mouseRightButtonPressed;

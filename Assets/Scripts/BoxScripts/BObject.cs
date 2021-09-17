@@ -16,6 +16,7 @@ namespace BoxScripts
         public List<Guid> GuidsToListen;
 
         private void Reset() {
+            DBot.SendWarning("BObject - " + transform.name, " Changed its GUID");
             GenerateGUID();
         }
 

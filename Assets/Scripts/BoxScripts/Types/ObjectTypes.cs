@@ -5,6 +5,7 @@ namespace BoxScripts
         Default,
         Letter,
         Drawer,
+        Compare,
         Door
     }
 }

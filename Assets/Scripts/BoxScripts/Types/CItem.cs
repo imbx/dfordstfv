@@ -1,12 +1,26 @@
 
+using UnityEngine;
+using UnityEditor;
 using System;
+using System.Collections.Generic;
 
 namespace BoxScripts
 {
     [Serializable]
-    public class CItem : BObject
+    public class CItem
     {
+        private BObject Obj;
+        [ReadOnly]
+        public string Identifier  = "";
+        [Tooltip("Paste the identifiers to be compared")]
         public string[] Reqs;
+
+        public CItem(BObject  bobj)
+        {
+            Obj = bobj;
+            Identifier = Obj.IdentifierStr;
+            Reqs = new string[2];
+        }
 
         public bool CheckReqs()
         {
@@ -15,7 +29,7 @@ namespace BoxScripts
                 {
                     foreach(string _id in Reqs)
                         if(!ActionManager.Instance.GetASBool(_id)) return false;
-                    ActionManager.Instance.SetASBool(Identifier, true);
+                    ActionManager.Instance.SetASBool(Obj.Identifier, true);
                     return true;
                 }
             }

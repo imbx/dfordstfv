@@ -1,5 +1,4 @@
 using UnityEngine;
-using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -14,7 +13,7 @@ public class CController : MonoBehaviour
 
     [Header("Movement")]
     private CharacterController m_characterController;
-    public EntityData m_CVars;
+    public CharacterVariables m_CVars;
     public ControllerData m_PlayerMovement;
 
     [Header("Stats")]
@@ -54,7 +53,7 @@ public class CController : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(m_CVars.CanLook) CameraMovement();
         else isMoving = false;
@@ -74,7 +73,7 @@ public class CController : MonoBehaviour
         }
         else return false;
     }
-    AudioClip GetClipFromArray(AudioClip[] clipArray)
+    /*AudioClip GetClipFromArray(AudioClip[] clipArray)
     {
         int atempts = 3;
         AudioClip selectedClip = clipArray[Random.Range(0, clipArray.Length - 1)];
@@ -86,7 +85,7 @@ public class CController : MonoBehaviour
         }
         previousClip = selectedClip;
         return selectedClip;
-    }
+    }*/
     void TriggerNextClip()
     {
         /*audioSource.pitch = Random.Range(0.9f, 1.1f);
@@ -189,7 +188,7 @@ public class CController : MonoBehaviour
     public void Reset()
     {
         //m_startPosition.ApplyTo(transform);
-        m_CVars.OnAfterDeserialize();
+        // m_CVars.OnAfterDeserialize();
     }
     #endregion
 }

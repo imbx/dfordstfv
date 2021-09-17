@@ -3,7 +3,7 @@ using BoxScripts;
 
 [CreateAssetMenu]
 public class GameControllerObject : ScriptableObject {
-    public GameState state = GameState.LOADGAME;
+    // public GameState state = GameState.LOADGAME;
     public Camera camera;
     public bool requireFocus = true;
     public bool justChangedState = false;
@@ -13,7 +13,7 @@ public class GameControllerObject : ScriptableObject {
     public bool targetAllLayers = false;
     public bool isInPuzzle = false;
 
-    private GameState prevState = GameState.PLAYING;
+    // private GameState prevState = GameState.PLAYING;
 
     public bool hasGoodEnd = false;
 
@@ -21,7 +21,7 @@ public class GameControllerObject : ScriptableObject {
 
     public string lang = "ES";
 
-    public void ChangeState(GameState gs)
+    /*public void ChangeState(GameState gs)
     {
         justChangedState = true;
         Debug.Log("[GCO] Requesting state change to " + gs + " and just changed? " + justChangedState);
@@ -34,5 +34,5 @@ public class GameControllerObject : ScriptableObject {
         Debug.Log("[GCO] Returning to " + prevState);
         justChangedState = true;
         state = prevState;
-    }
+    }*/
 }
