@@ -20,8 +20,8 @@ namespace BoxScripts
         private void Reset() {
             foreach(BObject bobj in Resources.FindObjectsOfTypeAll(typeof(BObject)) as BObject[])
             {
-                if(bobj.Identifier == Guid.Empty) bobj.GenerateGUID();
-                actionState.Add ( new ActionState(bobj.IdentifierStr) );
+                if(bobj.Identifier == "") bobj.GenerateGUID();
+                actionState.Add ( new ActionState(bobj.Identifier) );
             }
         }
 
@@ -122,8 +122,8 @@ namespace BoxScripts
                 scriptTarget.actionState = new List<ActionState>();
                 foreach(BObject bobj in Resources.FindObjectsOfTypeAll(typeof(BObject)) as BObject[])
                 {
-                    if(bobj.Identifier == Guid.Empty) bobj.GenerateGUID();
-                    scriptTarget.actionState.Add ( new ActionState(bobj.IdentifierStr) );
+                    if(bobj.Identifier == "") bobj.GenerateGUID();
+                    scriptTarget.actionState.Add ( new ActionState(bobj.Identifier) );
                 }
             }
         }

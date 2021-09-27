@@ -18,7 +18,7 @@ namespace BoxScripts
         public CItem(BObject  bobj)
         {
             Obj = bobj;
-            Identifier = Obj.IdentifierStr;
+            Identifier = Obj.Identifier;
             Reqs = new string[2];
         }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
+  m_IndirectSpecularColor: {r: 1250.0902, g: 1597.8608, b: 2177.6772, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42183247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,8 +559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bc281270aecb848946223be9acb94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdentifierStr: 3ef39304-afb8-4d37-adb3-08edac340b10
-  ObjectType: 0
+  Identifier: 4ad8670a-c457-45b2-8e60-36aa0d46bd5c
+  ObjectType: 3
   isUnique: 0
 --- !u!114 &603302507
 MonoBehaviour:
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   comparerList:
-  - Identifier: 45e7d0f2-95f6-46d4-b16d-2ac64dda4585
+  - Identifier: 4ad8670a-c457-45b2-8e60-36aa0d46bd5c
     Reqs:
     - 
     - 
@@ -779,10 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionState:
-  - Identifier: 7d8d14c4-3f32-4d56-a522-2b9aa04fb4de
-    isActive: 0
-    state: 0
-  - Identifier: 33ba90c0-1cfe-4a1c-983a-a590eb9f0fef
+  - Identifier: 4ad8670a-c457-45b2-8e60-36aa0d46bd5c
     isActive: 0
     state: 0
 --- !u!1 &845749821
@@ -1039,9 +1036,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2667ce080da4058a9a6145990e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rooms:
-  - RoomName: 
-    Contiguous: 
+  Rooms: []
+  scLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  currentRoomId: 
 --- !u!1 &1038738502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,7 +2385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4448170082701640640}
   - component: {fileID: 571140811900922637}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2MFloor_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2522,7 +2521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2889616301638986112}
   - component: {fileID: 1319537248315113805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2MFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,7 +2613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5261782275031234331}
   - component: {fileID: 8310145769676496854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2MFloor_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2722,7 +2721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8332173044506153700}
   - component: {fileID: 5329968005117475369}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2MFloor_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}

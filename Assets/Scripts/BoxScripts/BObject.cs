@@ -8,9 +8,10 @@ namespace BoxScripts
     public class BObject : MonoBehaviour, IBaseObject
     {
         [SerializeField]
-        public Guid Identifier;
         [ReadOnly]
-        public string IdentifierStr;
+        public string Identifier;
+        // [ReadOnly]
+        //public string IdentifierStr;
         public OTypes ObjectType;
         public bool isUnique;
         public List<Guid> GuidsToListen;
@@ -44,8 +45,8 @@ namespace BoxScripts
 
         public void GenerateGUID(string idstr = null)
         {
-            Identifier = Guid.NewGuid();
-            IdentifierStr = Identifier.ToString();
+            Identifier = Guid.NewGuid().ToString();
+            // IdentifierStr = Identifier.ToString();
         }
 
     }

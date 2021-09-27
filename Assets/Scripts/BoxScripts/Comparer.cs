@@ -19,7 +19,7 @@ namespace BoxScripts
     public class ComparerEditor : Editor 
     {
         public Comparer scriptTarget;
-         public void Awake()
+        public void Awake()
         {
             scriptTarget = (Comparer)target;
         }
