@@ -124,12 +124,15 @@ namespace  BoxScripts
 
             if(scriptTarget.currentRoomId.Length <= 0) currentRoomsStr  = "None";
 
-            EditorGUILayout.HelpBox("\n  Current Active Rooms :\n  " + currentRoomsStr + "\n", MessageType.Info); 
+            EditorGUILayout.HelpBox("\n  Current Active Rooms :\n  " + currentRoomsStr + "\n", MessageType.Info);
+
+            serializedObject.ApplyModifiedProperties(); 
         }
 
         public void LoadRoomsFromFolder(string rootPath)
         {
             scriptTarget.Rooms = Utils.CreateRoomDataAsset();
+
             // scriptTarget.Rooms.Data.Clear();
             DBot.SendLog("AdditiveScenes", "Getting this path: " + Application.dataPath + rootPath);
             string rootDir = Application.dataPath + rootPath;
@@ -144,6 +147,8 @@ namespace  BoxScripts
                 EditorSceneManager.MarkSceneDirty(openedScene);
                 EditorSceneManager.SaveOpenScenes();
             });
+
+            serializedObject.ApplyModifiedProperties();
         }
     }
 

@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2667ce080da4058a9a6145990e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rooms: []
+  Rooms: {fileID: 11400000, guid: 328653ea148391b40893b7fd2ed7c40c, type: 2}
   scLayer:
     serializedVersion: 2
     m_Bits: 1024
