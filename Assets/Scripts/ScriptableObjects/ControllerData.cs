@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(fileName = "SceneRooms", menuName = "BoxScripts/ControllerData", order = 0)]
 public class ControllerData : ScriptableObject{
     public Vector2 Axis = Vector2.zero;
     public Vector2 CameraAxis = Vector2.zero;

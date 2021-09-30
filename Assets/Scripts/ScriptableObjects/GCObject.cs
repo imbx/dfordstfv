@@ -1,7 +1,7 @@
 using UnityEngine;
 using BoxScripts;
 
-[CreateAssetMenu]
+[CreateAssetMenu(fileName = "SceneRooms", menuName = "BoxScripts/GCObject", order = 0)]
 public class GameControllerObject : ScriptableObject {
     // public GameState state = GameState.LOADGAME;
     public Camera camera;

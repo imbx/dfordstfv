@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(fileName = "SceneRooms", menuName = "BoxScripts/CharVariables", order = 0)]
 public class CharacterVariables : ScriptableObject, ISerializationCallbackReceiver {
     [Header("Basic Vars")]
     public float Speed = 4.5f;

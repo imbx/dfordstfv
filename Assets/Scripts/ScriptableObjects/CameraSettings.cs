@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(fileName = "SceneRooms", menuName = "BoxScripts/CameraSettings", order = 0)]
 public class CameraSettings : ScriptableObject {
     public float MinPitch = -55f;
     public float MaxPitch = 50f;

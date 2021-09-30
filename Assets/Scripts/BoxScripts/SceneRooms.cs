@@ -4,12 +4,12 @@ using System;
 
 namespace BoxScripts
 {
-    //[CreateAssetMenu(fileName = "SceneRooms", menuName = "/ScriptableObjects/SceneRoom", order = 0)]
+    // [CreateAssetMenu(fileName = "SceneRooms", menuName = "BoxScripts/SceneRoom", order = 0)]
     [Serializable]
-    public class SceneRoom {
-        [SerializeField]
+    public class SceneRoom{
+        [ReadOnly]
         public string RoomName;
-        [SerializeField]
+        
         public bool isActive
         {
             get
@@ -17,8 +17,8 @@ namespace BoxScripts
                 return _isActive;
             }
         }
+        [SerializeField]
         private bool _isActive = false;
-        
         [SerializeField]
         private int[] Contiguous;
 
@@ -30,6 +30,10 @@ namespace BoxScripts
         public int[] GetNextRooms()
         {
             return Contiguous;
+        }
+
+        public SceneRoom(string RName){
+            RoomName = RName;
         }
     }
 }
