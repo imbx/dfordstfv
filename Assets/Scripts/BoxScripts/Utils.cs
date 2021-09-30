@@ -47,14 +47,14 @@ namespace BoxScripts
             {
                 DBot.SendLog("Utils", "Creating scene room object.");
                 asset = ScriptableObject.CreateInstance<RoomData>();
+                asset.Data = new List<SceneRoom>();
                 AssetDatabase.CreateAsset(asset, assetPath);
                 AssetDatabase.SaveAssets();
-                asset.Data = new List<SceneRoom>();
             }
             else
             {
                  DBot.SendLog("Utils", "Found scene room object.");
-                asset = (RoomData)AssetDatabase.LoadAssetAtPath(assetPath, typeof(RoomData));
+                asset = (RoomData) AssetDatabase.LoadAssetAtPath(assetPath, typeof(RoomData));
             }
 
             // EditorUtility.FocusProjectWindow();
