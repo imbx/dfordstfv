@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 86bc6258f2da0684cbd568d4921902ea, type: 3}
   m_Name: RoomData
-  m_EditorClassIdentifier: Assembly-CSharp::RoomData
-  Data:
-  - RoomName: Hall
-    _isActive: 1
-    Contiguous: 
+  m_EditorClassIdentifier: 
+  Data: []

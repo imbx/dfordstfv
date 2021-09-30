@@ -3,8 +3,7 @@ using BoxScripts;
 using System.Collections.Generic;
 using System;
 
-[CreateAssetMenu(fileName = "RoomsData", menuName = "BoxScripts/RoomsData", order = 0)]
-[Serializable]
+[CreateAssetMenu(fileName = "RoomData", menuName = "BoxScripts/RoomData", order = 0)]
 public class RoomData : ScriptableObject {
     public List<SceneRoom> Data;
 
