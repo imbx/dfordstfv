@@ -64,4 +64,67 @@ namespace BoxScripts
             return asset;
         }
     }
+
+
+    [Serializable]
+    public class Dialogue
+    {
+        public int id;
+        public SerializableVector2 anchoredPosition;
+        public SerializableVector2 size;
+        public string dialogueText;
+        public bool isAnchoredAtTop;
+        public bool isAnchoredAtCenter;
+        public float lifeTime;
+    }    
+
+    // https://stackoverflow.com/questions/36239705/serialize-and-deserialize-json-and-json-array-in-unity
+
+    public static class JsonHelper
+    {
+        public static T[] FromJson<T>(string json)
+        {
+            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+            return wrapper.Items;
+        }
+
+        public static string ToJson<T>(T[] array)
+        {
+            Wrapper<T> wrapper = new Wrapper<T>();
+            wrapper.Items = array;
+            return JsonUtility.ToJson(wrapper);
+        }
+
+        public static string ToJson<T>(T[] array, bool prettyPrint)
+        {
+            Wrapper<T> wrapper = new Wrapper<T>();
+            wrapper.Items = array;
+            return JsonUtility.ToJson(wrapper, prettyPrint);
+        }
+
+        [Serializable]
+        private class Wrapper<T>
+        {
+            public T[] Items;
+        }
+    }
+
+    // https://forum.unity.com/threads/change-gameobject-layer-at-run-time-wont-apply-to-child.10091/
+    
+     
+    public static class IListExtensions {
+        /// <summary>
+        /// Shuffles the element order of the specified list.
+        /// </summary>
+        public static void Shuffle<T>(this IList<T> ts) {
+            var count = ts.Count;
+            var last = count - 1;
+            for (var i = 0; i < last; ++i) {
+                var r = UnityEngine.Random.Range(i, count);
+                var tmp = ts[i];
+                ts[i] = ts[r];
+                ts[r] = tmp;
+            }
+        }
+    }
 }
