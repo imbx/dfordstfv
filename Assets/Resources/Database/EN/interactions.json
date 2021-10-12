@@ -1,0 +1,57 @@
+{
+    "Items": [
+        {
+            "tag": "BasicInteraction",
+            "interactionText": "Press [Left Click] to interact\n"
+        },
+        {
+            "tag": "Picture",
+            "interactionText": "Hold [Left Click] to move\n"
+        },
+        {
+            "tag": "RadioOn",
+            "interactionText": "Press [Left Click] to turn off    Hold and move horizontally [Right Click] to change the frequency\n"
+        },
+        {
+            "tag": "RadioOff",
+            "interactionText": "Press [Left Click] to turn on\n"
+        },
+        {
+            "tag": "Safebox",
+            "interactionText": "Hold and move horizontally [Left Click] to rotate the wheel. (First value to the right, second value to the left)\n"
+        },
+        {
+            "tag": "PlacePicture",
+            "interactionText": "Press [Left Click] to place the picture\n"
+        },
+        {
+            "tag": "Map",
+            "interactionText": "Press [Left Click] to place a pin\n"
+        },
+        {
+            "tag": "MapPin",
+            "interactionText": "Press [Right Click] to remove\n"
+        },
+        {
+            "tag": "Archive",
+            "interactionText": "Press [Tab] to exit\n"
+        },
+        {
+            "tag": "ArchiveFlip",
+            "interactionText": "Press [Tab] to exit   [Right Click] to flip\n"
+        },
+        {
+            "tag": "Item",
+            "interactionText": "Press [Left Click] to interact   Hold [Right Click] to rotate   [W] [S] to zoom in/out   Press [Esc] to exit\n"
+        },
+        {
+            "tag": "ItemNoPick",
+            "interactionText": "Hold [Right Click] to rotate   [W] [S] to zoom in/out   Press [Esc] to exit\n"
+        },
+        {
+            "tag": "Book",
+            "interactionText": "Hold [Left Click] to move   Press [Esc] to exit\n"
+        }
+    ]
+}
+    

@@ -10,7 +10,7 @@ namespace  BoxScripts.DB
 {
     public class DBManager : MonoBehaviour
     {
-        private Dictionary<MultiKeyArr<string, string>, DBItem> DB;
+        private Dictionary<MultiKeyArr<string, string>, object> DB;
         public Dictionary<string, string> Lang;
         public string PathToDB = "Database/";
 
@@ -19,46 +19,43 @@ namespace  BoxScripts.DB
             Lang.Add("ES", "Español");
             Lang.Add("EN", "English");
 
-
             foreach(KeyValuePair<string, string> entry in Lang)
             {
+                DBot.SendLog("DBManager", "Parsing " + entry.Value + " into DB.");
+                
                 ParseData<Interactions>(
-                    "Database/"+ entry.Key + "/interactions",
+                    PathToDB + entry.Key + "/interactions",
                     delegate(Interactions interact){
                         DB.Add(MultiKeyArr.Create<string, string>(entry.Key, interact.tag), interact.Convert());
                 });
 
                 ParseData<Dialogue>(
-                    "Database/"+ entry.Key + "/dialogues",
+                    PathToDB + entry.Key + "/dialogues",
                     delegate(Dialogue dialogue){
                         DB.Add(MultiKeyArr.Create<string, string>(entry.Key, dialogue.id.ToString()), dialogue.Convert());
                 });
-                
+
+                DBot.SendLog("DBManager", entry.Value + " parsed into DB.");
             }
         }
 
-        public void ParseInteractions()
+        public void ParseData<T>(string fileName, Action<T> action)
         {
-
-        }
-
-
-        public T[] ParseData<T>(string fileName, Action<T> action)
-        {
-            var textAsset = Resources.Load<TextAsset>(fileName);
-
-            T[] d = JsonHelper.FromJson<T>(textAsset.text);
-
-            foreach(T tempObj in d)
+            try
             {
-                action(tempObj);
+                var textAsset = Resources.Load<TextAsset>(fileName);
+                T[] d = JsonHelper.FromJson<T>(textAsset.text);
 
-                DBot.SendLog("Database", "Data extracted added " + tempObj);
+                foreach(T tempObj in d)
+                {
+                    action(tempObj);
+                    DBot.SendLog("DBManager", "Data extracted added " + tempObj);
+                }
             }
-
-            return d;
+            catch (Exception e)
+            {
+                DBot.SendError("DBManager", e.ToString());
+            }
         }
-
-
     }
 }

@@ -1,0 +1,57 @@
+{
+    "Items": [
+        {
+            "tag": "BasicInteraction",
+            "interactionText": "Pulsa [Click izq] para interactuar\n"
+        },
+        {
+            "tag": "Picture",
+            "interactionText": "Manten [Click izq] para mover\n"
+        },
+        {
+            "tag": "RadioOn",
+            "interactionText": "Pulsa [Click izq] para apagar    Manten y desliza horizontalmente [Click dch] para cambiar la frecuencia\n"
+        },
+        {
+            "tag": "RadioOff",
+            "interactionText": "Pulsa [Click izq] para encender\n"
+        },
+        {
+            "tag": "Safebox",
+            "interactionText": "Desliza horizontalmente con [Click izq] para girar la rueda. (Hacia la derecha el primer valor, hacia la izquierda el segundo)\n"
+        },
+        {
+            "tag": "PlacePicture",
+            "interactionText": "Pulsa [Click izq] para colocar el cuadro\n"
+        },
+        {
+            "tag": "Map",
+            "interactionText": "Pulsa [Click izq] para colocar una chincheta\n"
+        },
+        {
+            "tag": "MapPin",
+            "interactionText": "Pulsa [Click dch] para eliminar\n"
+        },
+        {
+            "tag": "Archive",
+            "interactionText": "Pulsa [Tab] para salir\n"
+        },
+        {
+            "tag": "ArchiveFlip",
+            "interactionText": "Pulsa [Tab] para salir   [Click derecho] para voltear\n"
+        },
+        {
+            "tag": "Item",
+            "interactionText": "Pulsa [Click izq] para interactuar   Manten [Click dch] para rotar   [W] [S] para hacer zoom   Pulsa [Esc] para salir\n"
+        },
+        {
+            "tag": "ItemNoPick",
+            "interactionText": "Manten [Click dch] para rotar   Pulsa [Esc] para salir\n"
+        },
+        {
+            "tag": "Book",
+            "interactionText": "Manten [Click izq] para mover   Pulsa [Esc] para salir\n"
+        }
+    ]
+}
+    

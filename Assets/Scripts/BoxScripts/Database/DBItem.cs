@@ -3,17 +3,12 @@ using System;
 
 namespace BoxScripts.DB
 {
-    public class DBItem
+    public class DBItem<T>
     {
-        public Material material;
-        public string text;
-        public Sprite sprite;
-
+        public T value;
         public DBItemSettings settings;
 
-        public DBItem (string txt) => text = txt;
-        public DBItem (Material mat) => material = mat;
-        public DBItem (Sprite spr) => sprite = spr;
+        public DBItem (T val) => value = val;
 
         public void Settings(
             SerializableVector2 size,

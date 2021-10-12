@@ -1,0 +1,1096 @@
+{
+    "Items": [
+        {
+            "id": 1,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Maybe I should look around this area",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 2,
+            "size": {
+                "x": 600.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -396,
+                "y": -35
+            },
+            "dialogueText": "This may be helpful to me",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 3,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Should I find a way to open this?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 4,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "This might mean something...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 5,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "This seems interesting",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 6,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Oliver was not well...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 7,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Looks like a pattern",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 8,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Oliver may be upstairs",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 9,
+            "size": {
+                "x": 790.0,
+                "y": 360.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "The radio is making a strange noise. It looks like the code Oliver invented when we fought together... He loved to use it to hide combinations!",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 5.0
+        },
+        {
+            "id": 10,
+            "size": {
+                "x": 950.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -30
+            },
+            "dialogueText": "Maybe I should activate the fuses first. Nobody knows what can happen in the darkness!",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 11,
+            "size": {
+                "x": 720.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "These paintings? Why would he keep a copy here?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 12,
+            "size": {
+                "x": 788.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "This note is broken, it also seems that a piece has disappeared",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 13,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "I think I'll turn on the lights",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 14,
+            "size": {
+                "x": 788.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "The lights are turning on, good job Arthur",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 15,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "This seems familiar to me...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 16,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "There are some numbers pointed",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 17,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 18,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 19,
+            "size": {
+                "x": 400,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Hmm...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.0
+        },
+        {
+            "id": 20,
+            "size": {
+                "x": 560,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "I should write this down",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.0
+        },
+        {
+            "id": 21,
+            "size": {
+                "x": 780,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "With the mess of cables that are below, what's the point of activating the leads?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 22,
+            "size": {
+                "x": 766,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -445,
+                "y": -35
+            },
+            "dialogueText": "I've never seen letters like this. In the note he mentions that he hides something behind the bookcase...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 23,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "I'm going to try with this key",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 24,
+            "size": {
+                "x": 766,
+                "y": 355.4
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Oliver has a friend named Abraham. Apparently he has just one hand",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 25,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -95,
+                "y": -35
+            },
+            "dialogueText": "I remember Oliver’s sister Emily... It seems that this letter is from the war bombings",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.5
+        },
+        {
+            "id": 26,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "n this letter his friend Alfie mentions the Irish revolution ...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 3.5
+        },
+        {
+            "id": 27,
+            "size": {
+                "x": 766,
+                "y": 344.1
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "It looks like it's locked with a key and a padlock",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 3.5
+        },
+        {
+            "id": 28,
+            "size": {
+                "x": 766,
+                "y": 477.2
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "This note talks about a secret code to encrypt combinations ... I remember that Oliver created it during the war",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 29,
+            "size": {
+                "x": 766,
+                "y": 344.1
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "It seems that there was a painting here before...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+
+        {
+            "id": 30,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -50,
+                "y": -35
+            },
+            "dialogueText": "Was Oliver Diagnosed With Post Traumatic Stress? Seems like a big deal",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 31,
+            "size": {
+                "x": 760,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Oliver ... What he says in this note is worrying",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 32,
+            "size": {
+                "x": 788.0,
+                "y": 300.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Why does he speak about a superior force? I've never seen this symbol before...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 33,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "But… What are you talking about, Oliver? Clearly he is losing his mind...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+
+        {
+            "id": 34,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 35,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A padlock and a lock? He is Definitely taking his security seriously...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 36,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Powder? What are you hatching?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 37,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "The door has a padlock. What is the combination be?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 38,
+            "size": {
+                "x": 788.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver loves art. I remember he was always explaining it to me when we fought together",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 39,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A painting of a man without a hand...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 40,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Nice radio. Can I turn it on?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 41,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A piece of a note?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 42,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver keeps the key to the upstairs door in the kitchen",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 43,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A liquid to see? What is he talking about?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 44,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Maybe I can fix the cables now",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 45,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A bottle with a liquid. What will happen if I put it in the oil lamp?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 46,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "It does not work. Maybe I need a tool...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 47,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A strongbox. Can I open it?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 48,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Those numbers... Are they combinations?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 49,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "I guess I need a tool...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 50,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Another door with a combination...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 51,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "It could be useful...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 52,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "It's a map of United Kingdom",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 53,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "The note mentions a route through the United Kingdom...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 54,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A bookcase with three shelves. What strange books...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 55,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A bomb?! In what order do I cut the cables? If I do it wrong it will explode",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 56,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "The order is correct. I may have to turn on the electricity...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 57,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A painting of Oliver and me. I miss him so much. I hope he is fine",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 58,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver as a child. How adorable he was",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 59,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver has always liked to paint. I hope he continues being the same...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 60,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Thread and thumbtacks. I can do something with it",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 61,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "It seems that these projectors show some symbol",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 62,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Each projector has a wheel with symbols...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 63,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oli! What have you drunk? What is this liquid?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 64,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Why are you doing this? How do I deactivate it?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 65,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "This is weird, Oliver has always been very tidy...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 66,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oli ... Why are you doing this?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 67,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "I remember when I sent this to Oliver. Every day I think about how my life would have been with him.",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 68,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "It seems like a cat name...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 69,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver... During the war we lived through many things. I hope one day we don't have to pretend",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 70,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "The liquid... He might use it to paint things",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 71,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Clear out my body? What are you going to do? I have to stop him",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        }
+    ]
+}
+    

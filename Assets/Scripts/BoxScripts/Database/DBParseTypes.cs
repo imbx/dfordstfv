@@ -13,9 +13,9 @@ namespace BoxScripts.DB
         public bool isAnchoredAtCenter;
         public float lifeTime;
 
-        public DBItem Convert()
+        public DBItem<string> Convert()
         {
-            DBItem item = new DBItem(dialogueText);
+            DBItem<string> item = new DBItem<string>(dialogueText);
             item.Settings(
                 size,
                 anchoredPosition,
@@ -32,9 +32,9 @@ namespace BoxScripts.DB
         public string tag;
         public string interactionText;
 
-        public DBItem Convert()
+        public DBItem<string> Convert()
         {
-            return new DBItem(interactionText);
+            return new DBItem<string>(interactionText);
         }
     }
 }

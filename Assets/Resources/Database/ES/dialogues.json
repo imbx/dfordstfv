@@ -1,0 +1,1096 @@
+{
+    "Items": [
+        {
+            "id": 1,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Quizás deberia inspecionar esta zona",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 2,
+            "size": {
+                "x": 600.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -396,
+                "y": -35
+            },
+            "dialogueText": "Es posible que esto me resulte de utilidad",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 3,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "¿Debería encontrar una manera de abrir esto?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 4,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Que extraño, esto parece significar algo...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 5,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Esto parece interesante",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 6,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Oliver no estaba bien...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 7,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Hmm parece un patrón",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 8,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Puede que Oliver esté arriba",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 9,
+            "size": {
+                "x": 790.0,
+                "y": 360.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "La radio emite un ruido extraño. Parece el código que Oliver invento cuando combatiamos juntos... ¡Le encantaba usarlo para ocultar combinaciones!",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 5.0
+        },
+        {
+            "id": 10,
+            "size": {
+                "x": 950.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -30
+            },
+            "dialogueText": "Quizás debería primero subir los plomos. ¡Nadie sabe que puede ocurrir en la oscuridad!",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 11,
+            "size": {
+                "x": 720.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "¿Estos cuadros? ¿Por qué guardaría una copia aquí?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 12,
+            "size": {
+                "x": 788.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Esta nota está rota, además parece que ha desaparecido un trozo",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 13,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Creo que encenderé las luces",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 14,
+            "size": {
+                "x": 788.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Se encienden las luces, buen trabajo Arthur",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 15,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Me resulta familiar...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 16,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Hay unos numeros apuntados",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 17,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Parece que esto no funciona bien, necesito una herramienta",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+
+        {
+            "id": 18,
+            "size": {
+                "x": 500.0,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Vaya esto parece que tenga un mecanismo para moverse, ¿necesitará electricidad?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.0
+        },
+        {
+            "id": 19,
+            "size": {
+                "x": 400,
+                "y": 220.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Hmm...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.0
+        },
+        {
+            "id": 20,
+            "size": {
+                "x": 560,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Será mejor que lo apunte!",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.0
+        },
+        {
+            "id": 21,
+            "size": {
+                "x": 780,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Con el lio de cables que hay abajo,\n ¿de que me sirve subir los plomos?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 22,
+            "size": {
+                "x": 766,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": -445,
+                "y": -35
+            },
+            "dialogueText": "Nunca había visto unas letras así.\n En la nota menciona que esconde algo detrás de la librería...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 23,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Voy a probar con esta llave",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 24,
+            "size": {
+                "x": 766,
+                "y": 355.4
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Oliver tiene un amigo llamado Abraham. Al parecer le falta una mano",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 25,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -95,
+                "y": -35
+            },
+            "dialogueText": "Recuerdo a su hermana Emily… Parece que esta carta es de los bombardeos de la guerra",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4.5
+        },
+        {
+            "id": 26,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "En esta carta su amigo menciona la revolución Irlandesa...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 3.5
+        },
+        {
+            "id": 27,
+            "size": {
+                "x": 766,
+                "y": 344.1
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "Parece que está cerrado con llave y un candado",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 3.5
+        },
+        {
+            "id": 28,
+            "size": {
+                "x": 766,
+                "y": 477.2
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Esta nota habla de un código secreto para encriptar combinaciones… Recuerdo que Oliver lo creó durante la guerra",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 29,
+            "size": {
+                "x": 766,
+                "y": 344.1
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Parece que aquí había un cuadro antes...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+
+        {
+            "id": 30,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -50,
+                "y": -35
+            },
+            "dialogueText": "¿Diagnosticaron a Oliver con estrés postraumático? Parece un asunto grave",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 31,
+            "size": {
+                "x": 760,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Oliver... Lo que dice en esta nota es preocupante",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 32,
+            "size": {
+                "x": 788.0,
+                "y": 300.0
+            },
+            "anchoredPosition": {
+                "x": -96,
+                "y": -35
+            },
+            "dialogueText": "¿Por qué habla de una fuerza superior? Nunca he visto este símbolo...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 33,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "Pero… ¿De qué estás hablando Oliver? Está claro que está perdiendo la cabeza...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+
+        {
+            "id": 34,
+            "size": {
+                "x": 788,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": -90,
+                "y": -35
+            },
+            "dialogueText": "",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 35,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un candado y una cerradura? Si que se toma en serio la seguridad...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 36,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Pólvora? Que estás tramando Oliver...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 37,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "La puerta tiene candado. ¿Cuál será la combinación?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 38,
+            "size": {
+                "x": 788.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A Oliver le encanta el arte. Recuerdo que siempre me lo explicaba cuando combatimos juntos",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 39,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Un cuadro de un hombre sin mano...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 40,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Bonita radio. ¿Puedo encenderla?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 41,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un trozo de nota?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 4
+        },
+        {
+            "id": 42,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver guarda la llave de la puerta de arriba en la cocina",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 43,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un líquido para ver? ¿De que habla?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 44,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Quizás pueda arreglar ahora los cables",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 45,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Un frasco con un líquido. ¿Que pasará si lo pongo en la lámpara de aceite?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 46,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "No funciona. Quizás me falta alguna herramienta...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 47,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Una caja fuerte. ¿La podré abrir?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 48,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Esos números... ¿Serán combinaciones?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 49,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Supongo que necesito una herramienta...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 50,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Otra puerta con combinación...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 51,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Podría ser útil...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 52,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Es un mapa de Reino Unido",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 53,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "La nota menciona una ruta por el Reino Unido...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 54,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Una librería con tres baldas. Que libros más raros...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 55,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¡¿Una bomba?! ¿En qué orden corto los cables? Si me equivoco al cortarlos explotará",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+        },
+        {
+            "id": 56,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "El orden es correcto. Quizás tenga que activar la electricidad...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 57,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Un cuadro de Oliver conmigo. Lo echo de menos. Espero que esté bien",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 58,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver de pequeño, que adorable",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 59,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A Oliver siempre le ha gustado pintar. Espero que continúe siendo el mismo...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 60,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Hilo y chinchetas. Puedo hacer algo con ello",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 61,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Parece que estos proyectores muestran algun símbolo",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 62,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Cada proyector tiene una rueda con símbolos... ",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 63,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¡Oli! ¿Qué te has tomado? ¿Qué es este líquido?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 64,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Por qué haces esto? ¿Cómo la desactivo?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 65,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Que raro, Oliver siempre ha sido muy ordenado...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 66,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oli...¿Por qué has caído en esto?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 67,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Recuerdo cuando le envié esto a Oliver. Cada día pienso como hubiera sido mi vida con él",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 68,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Tiene nombre de gato...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 69,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver... Durante la guerra vivimos muchas cosas. Espero que algún día no tengamos que fingir",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 70,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "El líquido... Debe utilizarlo para pintar cosas",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 71,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Vaciar mi cuerpo? ¿Que va a hacer? Tengo que pararle",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        }
+    ]
+}
+    
