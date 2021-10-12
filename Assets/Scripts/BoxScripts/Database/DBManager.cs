@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace  BoxScripts.DB
 {
-    public class DBManager : MonoBheaviour
+    public class DBManager : MonoBehaviour
     {
         public T[] ParseData<T>(string fileName)
         {
