@@ -22,7 +22,18 @@ namespace  BoxScripts.DB
 
             foreach(KeyValuePair<string, string> entry in Lang)
             {
-                DB.Add(("ES", "ASD"), new DBItem("asd"));
+                ParseData<Interactions>(
+                    "Database/"+ entry.Key + "/interactions",
+                    delegate(Interactions interact){
+                        DB.Add(MultiKeyArr.Create<string, string>(entry.Key, interact.tag), interact.Convert());
+                });
+
+                ParseData<Dialogue>(
+                    "Database/"+ entry.Key + "/dialogues",
+                    delegate(Dialogue dialogue){
+                        DB.Add(MultiKeyArr.Create<string, string>(entry.Key, dialogue.id.ToString()), dialogue.Convert());
+                });
+                
             }
         }
 
@@ -32,7 +43,7 @@ namespace  BoxScripts.DB
         }
 
 
-        public T[] ParseData<T>(string fileName)
+        public T[] ParseData<T>(string fileName, Action<T> action)
         {
             var textAsset = Resources.Load<TextAsset>(fileName);
 
@@ -40,6 +51,8 @@ namespace  BoxScripts.DB
 
             foreach(T tempObj in d)
             {
+                action(tempObj);
+
                 DBot.SendLog("Database", "Data extracted added " + tempObj);
             }
 
