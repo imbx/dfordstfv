@@ -8,53 +8,87 @@ namespace BoxScripts
     public class ActionManager : MonoBehaviour {
 
         public static ActionManager Instance;
-        public List<Guid> CurrentActions;
+        public List<string> CurrentActions;
 
         [SerializeField]
-        public List<ActionState> actionState;
+        public ActionDB actions;
+
+        //[SerializeField]
+        //public List<ActionState> actionState;
 
         private void Awake() {
             Instance = this;
         }
 
         private void Reset() {
+            if (!actions)
+            {
+                DBot.SendError("ActionManager", "No action ScriptableObject was added.");
+                return;
+            }
+
+            actions.Data.Clear();
+
             foreach(BObject bobj in Resources.FindObjectsOfTypeAll(typeof(BObject)) as BObject[])
             {
-                if(bobj.Identifier == "") bobj.GenerateGUID();
-                actionState.Add ( new ActionState(bobj.Identifier) );
+                string cId = bobj.Identifier;
+                if(cId == "" || cId == null) bobj.Identifier = AssignNewGUID(null);
+                else if (SearchActionState(cId) == null)
+                {
+                    actions.Add(cId);
+                }
             }
         }
 
-        public void AddAction(Guid guid)
+        private string GenerateGUID(string idstr = null)
+        {
+            return Guid.NewGuid().ToString();
+        }
+
+        public string AssignNewGUID(string oldId)
+        {
+            if(oldId != "")
+            {
+                DBot.SendWarning("ActionManager", "Removing ID: " + oldId);
+                RemoveActionState(oldId);
+            }
+
+            string nGUID = GenerateGUID();
+            actions.Add(nGUID);
+            return nGUID;
+        }
+
+        public bool RemoveActionState(string Id)
+        {
+            if(Id == null) return false;
+            actions.Data.Remove(SearchActionState(Id));
+            return true;
+        }
+
+        public void AddAction(string guid)
         {
             if(!CurrentActions.Contains(guid))
                 CurrentActions.Add(guid);
         }
 
-        public void RemAction(Guid guid)
+        public void RemAction(string guid)
         {
             if(CurrentActions.Contains(guid))
                 CurrentActions.Remove(guid);
         }
 
-        public bool isActionInUse(Guid guid)
+        public bool isActionInUse(string guid)
         {
             return CurrentActions.Contains(guid);
         }
 
         public ActionState SearchActionState(string guid)
         {
-            foreach(ActionState aState in actionState)
+            foreach(ActionState aState in actions.Data)
             {
                 if(aState.Identifier == guid) return aState;
             }
             return default;
-        }
-
-        public bool GetASBool(Guid guid)
-        {
-            ActionState action = SearchActionState(guid.ToString());
-            return (action != default) ? action.isActive : false;
         }
 
         public bool GetASBool(string guid)
@@ -63,34 +97,27 @@ namespace BoxScripts
             return (action != default) ? action.isActive : false;
         }
 
-        public void SetASBool(Guid guid, bool active = false)
-        {
-            ActionState action = SearchActionState(guid.ToString());
-            if(action != default) action.isActive = active;
-        }
-
         public void SetASBool(string guid, bool active = false)
         {
             ActionState action = SearchActionState(guid);
             if(action != default) action.isActive = active;
         }
 
-        public void GetASInt(Guid guid, int _state = -1)
-        {
-            ActionState action = SearchActionState(guid.ToString());
-            if(action != default) action.state = _state;
-        }
-
-        public void GetASInt(string guid, int _state = -1)
+        public int GetASInt(string guid)
         {
             ActionState action = SearchActionState(guid);
-            if(action != default) action.state = _state;
+            return (action != default) ? action.state : -1;
         }
 
-        public void SetASInt(Guid guid, int _state = -1)
+        public void SetASInt(string guid, int _state = -1)
         {
             ActionState action = SearchActionState(guid.ToString());
             if(action != default) action.state = _state;
+        }
+
+        public void Rst()
+        {
+            Reset();
         }
     }
 
@@ -117,15 +144,7 @@ namespace BoxScripts
         }
 
         private void Reset() {
-            if(scriptTarget)
-            {
-                scriptTarget.actionState = new List<ActionState>();
-                foreach(BObject bobj in Resources.FindObjectsOfTypeAll(typeof(BObject)) as BObject[])
-                {
-                    if(bobj.Identifier == "") bobj.GenerateGUID();
-                    scriptTarget.actionState.Add ( new ActionState(bobj.Identifier) );
-                }
-            }
+            if(scriptTarget) scriptTarget.Rst();
         }
     }
 }

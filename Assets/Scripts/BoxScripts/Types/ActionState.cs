@@ -8,7 +8,10 @@ namespace BoxScripts{
         public string Identifier;
         public bool isActive;
         public int state = 0;
-
+        public delegate void Load();
+        public delegate void Execute();
+        public Load load;
+        public Execute execute;
 
         public ActionState(string id, bool active = false, int st = 0)
         {

@@ -10,8 +10,6 @@ namespace BoxScripts
 
         [SerializeField]
         public List<CItem> comparerList;
-
-        
     
     }
 

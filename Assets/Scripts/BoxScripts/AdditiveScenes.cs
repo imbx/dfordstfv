@@ -1,20 +1,26 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
-using System;
-using System.Linq;
-using System.Collections.Generic;
 using UnityEditor.SceneManagement;
-using System.IO;
 
 namespace  BoxScripts
 {
     public class AdditiveScenes : MonoBehaviour {
+        public GameObject loadingScreen;
+        public CanvasGroup LoadingScreenCanvas;
+
         [SerializeField]
         public RoomData Rooms;
         public LayerMask scLayer;
         [HideInInspector]
         public int[] currentRoomId;
+
+        private List<AsyncOperation> operations;
 
         public void LoadRoom(int id)
         {
@@ -22,13 +28,12 @@ namespace  BoxScripts
             try
             {
                 if(Rooms.Data.Count < id && Rooms.Data.Count > 0)
-                SceneManager.LoadSceneAsync(Rooms.Data[id].RoomName, LoadSceneMode.Additive);
+                operations.Add(SceneManager.LoadSceneAsync(Rooms.Data[id].RoomName, LoadSceneMode.Additive));
                 Rooms.Data[id].SetActiveBool(true);
             } catch(Exception e)
             {
                 DBot.SendError("AdditiveScenes", e.ToString());
             }
-
         }
 
         public void UnloadRoom(int id)
@@ -45,6 +50,53 @@ namespace  BoxScripts
             }
 
         }
+
+        public IEnumerator LoadScenes(int[] rooms, bool requiresLoading = false)
+        {
+            if(Rooms == null || Rooms.Data.Count <= 0) 
+            {
+                DBot.SendError("AdditiveScenes", "No Scene Rooms loaded");
+                yield break;
+            }
+            if(RoomsChecker(rooms) || currentRoomId.Equals(rooms)) 
+            {
+                DBot.SendError("AdditiveScenes", "Tried to load a Scene out of the range");
+                yield break;
+            }
+
+            if(requiresLoading) 
+            {
+                loadingScreen.SetActive(true);
+                yield return StartCoroutine(Fade(1));
+            }
+
+            if(operations == null) operations = new List<AsyncOperation>();
+            operations.Clear();
+
+            foreach(int ir in rooms)
+            {
+                LoadRoom(ir);
+                yield return null;
+            }
+                
+            while(operations.Count > 0)
+            {
+                foreach( AsyncOperation ao in operations )
+                {
+                    if(ao.isDone) operations.Remove(ao);
+                    yield return null;
+                }
+                yield return null;
+            }
+
+            if(requiresLoading) 
+            {
+                yield return StartCoroutine(Fade(1));
+                loadingScreen.SetActive(false);
+            }
+            yield return null;
+        }
+
         public void UpdateRooms(int[] currentRooms)
         {
             if(Rooms == null || Rooms.Data.Count <= 0) 
@@ -87,6 +139,20 @@ namespace  BoxScripts
                 if(!RoomIdChecker(_id))
                     return false;
             return true;
+        }
+
+        public IEnumerator Fade(float targetValue, float duration = 1f)
+        {
+            float startValue = LoadingScreenCanvas.alpha;
+            float time = 0;
+
+            while (time < duration)
+            {
+                LoadingScreenCanvas.alpha = Mathf.Lerp(startValue, targetValue, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            LoadingScreenCanvas.alpha = targetValue;
         }
     }
 
