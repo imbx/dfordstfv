@@ -10,6 +10,8 @@ namespace  BoxScripts
 
         private void Awake() {
             instance = this;
+            Cursor.lockState = CursorLockMode.Locked;
+            //  isVisible ? : CursorLockMode.Confined;
         }
 
         private void OnEnable() {

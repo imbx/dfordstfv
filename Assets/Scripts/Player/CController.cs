@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(RaycastPlayer))]
+[RequireComponent(typeof(RaycastScene))]
 public class CController : MonoBehaviour
 {
     [Header("Camera Movement")]
@@ -20,12 +22,15 @@ public class CController : MonoBehaviour
     private float timer = 0;
     private float defaultYPos = 0;
 
+    private RaycastPlayer rcPlayer;
+
     private bool isMoving = false;
     float lastTranslate = 0;
     int bobbingDirection = 1;
 
     void OnEnable()
     {
+        rcPlayer = GetComponent<RaycastPlayer>();
         m_characterController = GetComponent<CharacterController>();
         defaultYPos = m_PitchController.localPosition.y;
 
@@ -43,7 +48,10 @@ public class CController : MonoBehaviour
         else isMoving = false;
         if(m_CVars.CanMove) Movement();
         else isMoving = false;
-        
+
+        Debug.DrawRay(m_PitchController.position, m_PitchController.forward * m_CVars.VisionRange, Color.green);
+        rcPlayer.ExecuteRaycast(m_PitchController.position, m_PitchController.forward, m_CVars.VisionRange, m_PlayerMovement.isInputDown);
+
         // isOnCarpets = CheckOnCarpet();
         HeadBobbing();
     }
@@ -77,7 +85,6 @@ public class CController : MonoBehaviour
         l_Movement.Normalize();
 
         l_Movement = l_Movement * m_CVars.Speed * Time.deltaTime;
-       
 
         m_characterController.Move(l_Movement);
         m_CVars.PlayerPosition = transform.position;
@@ -113,18 +120,17 @@ public class CController : MonoBehaviour
                     defaultYPos + translateChange,
                     m_PitchController.localPosition.z
                     );
+            return;
                     
         }
-        else
-        {
-            timer = 0;
-            m_PitchController.localPosition =
-                new Vector3(
-                    m_PitchController.localPosition.x,
-                    Mathf.Lerp(m_PitchController.localPosition.y, defaultYPos, Time.deltaTime * m_CVars.BobbingSpeed),
-                    m_PitchController.localPosition.z
-                    );
-        }
+        timer = 0;
+        m_PitchController.localPosition =
+            new Vector3(
+                m_PitchController.localPosition.x,
+                Mathf.Lerp(m_PitchController.localPosition.y, defaultYPos, Time.deltaTime * m_CVars.BobbingSpeed),
+                m_PitchController.localPosition.z
+                );
+        
     }
     #endregion
 

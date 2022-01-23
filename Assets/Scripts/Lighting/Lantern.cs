@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Lantern : MonoBehaviour {
     public int reqIdUV;
-    [SerializeField] private bool reqIdUVBool = false;
+    // [SerializeField] private bool reqIdUVBool = false;
     public ControllerData playerController;
     private Light lanternLight;
     [SerializeField] private bool isLanternActive;
-    [SerializeField] private float lanternInputCd = 0f;
+    // [SerializeField] private float lanternInputCd = 0f;
     [SerializeField] private LayerMask UVLayer;
     [SerializeField] private LayerMask NotUVLayer;
 

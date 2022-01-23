@@ -10,34 +10,24 @@ public class RaycastScene : MonoBehaviour {
         TargetLayer = LayerMask.GetMask("Floor");
     }
     private void FixedUpdate() {
-        
-        RaycastHit[] hits;
+        List<int> objects = new List<int>();
 
-        hits = Physics.RaycastAll(transform.position, -transform.up, 20f,TargetLayer);
-
-        if(hits.Length > 0)
-        {
-            List<int> objects = new List<int>();
-
-            for (int i = 0; i < hits.Length; i++)
-            {
-                RaycastHit hit = hits[i];
+        bool result = RaycastExtensions.Raycast(transform.position, -transform.up, TargetLayer,
+            delegate (RaycastHit hit) {
                 int tempRoom = Int32.Parse(hit.transform.name);
-
                 if(!objects.Contains(tempRoom)) objects.Add(tempRoom);
             }
-
+            );
+        
+        if(result)
+        {
             string DebugStringTotalScenes = "";
-            foreach( var x in objects) {
-                DebugStringTotalScenes += x.ToString() + " ";
-            }
-
-            DBot.SendLog("RaycastScene", "Scenes ID under player: " + DebugStringTotalScenes);
-
-            
+            foreach( var x in objects) DebugStringTotalScenes += x.ToString() + " ";
+            // DBot.SendLog("RaycastScene", "Scenes ID under player: " + DebugStringTotalScenes); 
 
             GameController.instance.additiveScenes.UpdateRooms(objects.ToArray());
         }
-        
+
+        objects.Clear(); 
     }
 }

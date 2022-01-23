@@ -84,35 +84,36 @@ namespace BoxScripts
 
         public ActionState SearchActionState(string guid)
         {
+            ActionState finalState = null;
             foreach(ActionState aState in actions.Data)
             {
-                if(aState.Identifier == guid) return aState;
+                if(aState.Identifier == guid) return finalState = aState;
             }
-            return default;
+            return finalState;
         }
 
         public bool GetASBool(string guid)
         {
             ActionState action = SearchActionState(guid);
-            return (action != default) ? action.isActive : false;
+            return (action != null) ? action.isActive : false;
         }
 
         public void SetASBool(string guid, bool active = false)
         {
             ActionState action = SearchActionState(guid);
-            if(action != default) action.isActive = active;
+            if(action != null) action.isActive = active;
         }
 
         public int GetASInt(string guid)
         {
             ActionState action = SearchActionState(guid);
-            return (action != default) ? action.state : -1;
+            return (action != null) ? action.state : -1;
         }
 
         public void SetASInt(string guid, int _state = -1)
         {
             ActionState action = SearchActionState(guid.ToString());
-            if(action != default) action.state = _state;
+            if(action != null) action.state = _state;
         }
 
         public void Rst()

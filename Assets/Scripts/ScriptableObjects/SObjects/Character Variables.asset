@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 4.5
   Gravity: 200
-  VisionRange: 50
+  VisionRange: 3
   BobbingSpeed: 13
   BobbingAmount: 0.025
-  CameraRotations: {x: 0, y: 0, z: 0}
+  CameraRotations: {x: -8.519978, y: 0, z: -230.78008}
   CanMove: 1
   CanLook: 1
   IsBlockedByEvent: 0
-  PlayerPosition: {x: 0, y: 0, z: 0}
+  PlayerPosition: {x: 0, y: 0.9799999, z: 0}
   isLoadingData: 0

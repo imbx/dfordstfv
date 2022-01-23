@@ -21,6 +21,7 @@ namespace BoxScripts
         public ExtLoad load;
         public ExtExecute execute;
 
+
         private void Reset() {
             if(Identifier == null || Identifier == "") {
                 Identifier = ActionManager.Instance.AssignNewGUID(Identifier);
@@ -55,19 +56,25 @@ namespace BoxScripts
 
         public void Execute()
         {
+            DBot.SendLog("BObject", Identifier);
+            DBot.SendLog("BObject", " RESULT IS: ");
+            Debug.Log(ActionManager.Instance.GetASBool(Identifier));
             if(ActionManager.Instance.GetASBool(Identifier)) return;
-            if(Reqs == null) return;
-            if(Reqs.Count > 0)
-            {
-                foreach(string uid in Reqs)
+            
+            if(Reqs != null)
+                if(Reqs.Count > 0)
                 {
-                    if(!(ActionManager.Instance.GetASInt(uid) == 5)) return;
+                    foreach(string uid in Reqs)
+                    {
+                        if(!(ActionManager.Instance.GetASInt(uid) == 5)) return;
+                    }
                 }
-            }
 
             ActionManager.Instance.SetASBool(Identifier, true);
             ActionManager.Instance.AddAction(Identifier);
-            execute?.Invoke();
+
+            DBot.SendWarning("BObject", " ACTION FOR " + Identifier + " RUNNING.");
+            execute?.Invoke(); 
         }
 
         public void Remove()
@@ -80,5 +87,47 @@ namespace BoxScripts
                 ActionManager.Instance.SetASInt(Identifier,  5); // 5 AS COMPARER TRUE;
             }
         }  
+    }
+    [CustomEditor(typeof(BObject))]
+    public class BObjectEditor : Editor 
+    {
+        public BObject scriptTarget;
+        private OTypes lastOType;
+        public void Awake()
+        {
+            scriptTarget = (BObject)target;
+        }
+
+        public override void OnInspectorGUI()
+        {
+            base.DrawDefaultInspector();
+            
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button("Update Components"))
+            {
+                UpdateButton();
+            }
+            GUILayout.EndHorizontal();
+        }
+
+        private void UpdateButton()
+        {
+            if(lastOType == scriptTarget.ObjectType) return;
+                
+            if(lastOType != OTypes.Default)
+            {
+                if(lastOType == OTypes.Drawer)
+                {
+                    scriptTarget.execute -= Selection.activeGameObject.GetComponent<Drawer>().Execute;
+                    Destroy(Selection.activeGameObject.GetComponent<Drawer>());
+                }   
+            }
+            
+            if(scriptTarget.ObjectType == OTypes.Drawer)
+            {
+                Drawer dw = Selection.activeGameObject.AddComponent<Drawer>();
+                scriptTarget.execute += dw.Execute;
+            }
+        }
     }
 }

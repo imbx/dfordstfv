@@ -10,7 +10,7 @@ public class Archive : MonoBehaviour
     [Header("Archive pages")]
     public List<ArchivePage> Pages;
     private List<int> ArchivePositions;
-    private int forcedPage = -1;
+    // private int forcedPage = -1;
     private int currentPage;
     [HideInInspector] public bool wantToForcePage = false;
 
@@ -21,7 +21,7 @@ public class Archive : MonoBehaviour
     public Sprite EmptyCircle;
     public Sprite FilledCircle;
     [SerializeField] private List<GameObject> nodes;
-    private float totalHeight = 0f;
+    // private float totalHeight = 0f;
     public GameObject NodesContainer;
     public Text ActionText;
 
