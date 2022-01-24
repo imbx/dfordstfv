@@ -12,6 +12,12 @@ public class Drawer : MonoBehaviour, IAction
     [ReadOnly]
     private string MovId;
 
+    private void Awake() {
+        ActionState actionState  = ActionManager.Instance.SearchActionState(GetComponent<BObject>().Identifier);
+        actionState.execute += Execute;
+        actionState.load += Load;
+    }
+
     public void Load()
     {
 

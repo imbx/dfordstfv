@@ -118,15 +118,15 @@ namespace BoxScripts
             {
                 if(lastOType == OTypes.Drawer)
                 {
-                    scriptTarget.execute -= Selection.activeGameObject.GetComponent<Drawer>().Execute;
+                    // scriptTarget.execute -= Selection.activeGameObject.GetComponent<Drawer>().Execute;
                     Destroy(Selection.activeGameObject.GetComponent<Drawer>());
                 }   
             }
             
             if(scriptTarget.ObjectType == OTypes.Drawer)
             {
-                Drawer dw = Selection.activeGameObject.AddComponent<Drawer>();
-                scriptTarget.execute += dw.Execute;
+                DBot.SendLog("BObject", " Adding Drawer");
+                Selection.activeGameObject.AddComponent<Drawer>();
             }
         }
     }
