@@ -6,17 +6,21 @@ namespace BoxScripts{
     {
         [ReadOnly]
         public string Identifier;
-        public bool isActive;
+        public bool isBusy;
         public int state = 0;
         public delegate void Load();
-        public delegate void Execute();
+        public delegate bool Execute();
+        public delegate void CustomUpdate();
+        public delegate void Remove();
         public Load load;
         public Execute execute;
+        public CustomUpdate customUpdate;
+        public Remove remove;
 
         public ActionState(string id, bool active = false, int st = 0)
         {
             Identifier = id;
-            isActive = active;
+            isBusy = active;
             st = state;
         }
     }

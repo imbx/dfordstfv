@@ -21,16 +21,17 @@ namespace BoxScripts
             this.mov = mov;
         }
     }
-    public class Mov : MonoBehaviour {
+    public class Mov {
         public bool isExecuting = false;
 
         public float Speed = 1f;
+        public bool move = false;
         public bool rotate = false;
         public bool scalate = false;
 
-        public Mov(float sp = 1f, bool rot = false, bool sc = false)
+        public Mov(float sp = 1f, bool mov = true, bool rot = false, bool sc = false)
         {
-            rotate = rot; scalate = sc;
+            move = mov; rotate = rot; scalate = sc;
             Speed = sp;
         }
         
@@ -53,7 +54,7 @@ namespace BoxScripts
 
                 if(rotate) target.eulerAngles = pac1.LerpAngle(pac2, timer);
                 if(scalate) target.localScale = pac1.LerpScale(pac2, timer);
-                target.position = pac1.LerpDistance(pac2, timer);
+                if(move) target.position = pac1.LerpDistance(pac2, timer);
                 yield return null;
             }
 

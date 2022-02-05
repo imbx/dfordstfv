@@ -28,8 +28,8 @@ namespace BoxScripts
                 if ( Reqs.Length > 0)
                 {
                     foreach(string _id in Reqs)
-                        if(!ActionManager.Instance.GetASBool(_id)) return false;
-                    ActionManager.Instance.SetASBool(Obj.Identifier, true);
+                        if(!ActionManager.Instance.IsBusy(_id)) return false;
+                    ActionManager.Instance.SetBusy(Obj.Identifier, true);
                     return true;
                 }
             }

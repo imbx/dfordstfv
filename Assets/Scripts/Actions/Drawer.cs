@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using BoxScripts;
 
-[RequireComponent(typeof(BObject))]
-public class Drawer : MonoBehaviour, IAction
+public class Drawer : ActionBase
 {
     public float Speed = 2f;
     public Vector3 Dir;
@@ -12,45 +12,25 @@ public class Drawer : MonoBehaviour, IAction
     [ReadOnly]
     private string MovId;
 
-    private void Awake() {
-        ActionState actionState  = ActionManager.Instance.SearchActionState(GetComponent<BObject>().Identifier);
-        actionState.execute += Execute;
-        actionState.load += Load;
-    }
-
-    public void Load()
-    {
-
-    }
-    public void Execute()
+    public override bool Execute()
     {
         DBot.SendError("Drawer", " Trying to execute.");
-        if (MovId == null)
+        if (MovId == null || MovId == "")
         {
+            DBot.SendError("Drawer", " Trying to create a movement.");
             MovId = MovementManager.Instance.CreateMov(transform, new DataPackage(transform.position + Dir), Speed);
         }
         else if(!MovementManager.Instance.CheckExecution(MovId)) MovementManager.Instance.Flip(MovId);
         else DBot.SendError("Drawer", " Trying to execute, but is already being executed.");
-    }
-
-    public void CustomUpdate()
-    {
-
-    }
-
-    public void Remove()
-    {
-
+        
+        return true;
     }
 
     void OnDrawGizmos(){
         #if UNITY_EDITOR
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(
-                transform.position,
-                transform.position + Dir
-            );
-            Gizmos.color = Color.white;
+        Handles.color = Utils.GetDarkBlueGUI;
+        Handles.DrawLine(transform.position, transform.position + Dir);
+        Handles.color = Color.white;
         #endif
     }
 }

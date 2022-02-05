@@ -16,28 +16,26 @@ namespace BoxScripts
         public bool Obtainable;
         public List<string> Reqs;
 
-        public delegate void ExtLoad();
-        public delegate void ExtExecute();
-        public ExtLoad load;
-        public ExtExecute execute;
+        private ActionState _action;
 
+
+        private void Awake() {
+            try
+            {
+                _action = ActionManager.Instance.SearchActionState(Identifier);
+                _action.load += Load;
+            }
+            catch (Exception e)
+            {
+                DBot.SendError("BObject - " + transform.name, " Something went wrong searching for ActionState");
+                DBot.SendError("BObject - " + transform.name, e.ToString());
+            }
+        }
 
         private void Reset() {
             if(Identifier == null || Identifier == "") {
                 Identifier = ActionManager.Instance.AssignNewGUID(Identifier);
                 DBot.SendWarning("BObject - " + transform.name, " Changed its GUID");
-
-                try
-                {
-                    ActionState action = ActionManager.Instance.SearchActionState(Identifier);
-                    action.load += Load;
-                    action.execute += Execute;
-                }
-                catch (Exception e)
-                {
-                    DBot.SendError("BObject - " + transform.name, " Something went wrong searching for ActionState");
-                    DBot.SendError("BObject - " + transform.name, e.ToString());
-                }
                 
             } // GenerateGUID();
         }
@@ -45,7 +43,8 @@ namespace BoxScripts
         public void Load()
         {
             if(ActionManager.Instance.GetASInt(Identifier) == 5) gameObject.SetActive(false);
-            load?.Invoke();
+            if(ActionManager.Instance.GetASInt(Identifier) == 1) _action?.execute.Invoke();
+            if(ActionManager.Instance.IsBusy(Identifier)) ActionManager.Instance.SetBusy(Identifier, false);
         }
 
         public void CustomUpdate()
@@ -56,10 +55,8 @@ namespace BoxScripts
 
         public void Execute()
         {
-            DBot.SendLog("BObject", Identifier);
-            DBot.SendLog("BObject", " RESULT IS: ");
-            Debug.Log(ActionManager.Instance.GetASBool(Identifier));
-            if(ActionManager.Instance.GetASBool(Identifier)) return;
+            DBot.SendLog("BObject", Identifier + " is active?  " + ActionManager.Instance.IsBusy(Identifier));
+            if(ActionManager.Instance.IsBusy(Identifier)) return;
             
             if(Reqs != null)
                 if(Reqs.Count > 0)
@@ -70,17 +67,18 @@ namespace BoxScripts
                     }
                 }
 
-            ActionManager.Instance.SetASBool(Identifier, true);
             ActionManager.Instance.AddAction(Identifier);
 
             DBot.SendWarning("BObject", " ACTION FOR " + Identifier + " RUNNING.");
-            execute?.Invoke(); 
+            bool res =_action.execute?.Invoke() ?? false;
+
+            if(res) Remove();
         }
 
         public void Remove()
         {
             ActionManager.Instance.RemAction(Identifier);
-            ActionManager.Instance.SetASBool(Identifier, false);
+            _action.remove?.Invoke();
 
             if(Obtainable)
             {
@@ -120,14 +118,18 @@ namespace BoxScripts
                 {
                     // scriptTarget.execute -= Selection.activeGameObject.GetComponent<Drawer>().Execute;
                     Destroy(Selection.activeGameObject.GetComponent<Drawer>());
+                }
+                else if(lastOType == OTypes.Door)
+                {
+                    // scriptTarget.execute -= Selection.activeGameObject.GetComponent<Drawer>().Execute;
+                    Destroy(Selection.activeGameObject.GetComponent<Door>());
                 }   
             }
+
+            DBot.SendLog("BObject", " Adding " + scriptTarget.ObjectType.ToString());
             
-            if(scriptTarget.ObjectType == OTypes.Drawer)
-            {
-                DBot.SendLog("BObject", " Adding Drawer");
-                Selection.activeGameObject.AddComponent<Drawer>();
-            }
+            if(scriptTarget.ObjectType == OTypes.Drawer) Selection.activeGameObject.AddComponent<Drawer>();
+            else if(scriptTarget.ObjectType == OTypes.Door) Selection.activeGameObject.AddComponent<Door>();
         }
     }
 }

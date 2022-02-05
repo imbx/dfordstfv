@@ -8,6 +8,20 @@ namespace BoxScripts
 {
     public class Utils
     {
+
+        public static Color GetSolidBlueGUI 
+        { 
+            get {
+                return new Color(0, 0, 1f, 0.05f);
+            } 
+        }
+        public static Color GetDarkBlueGUI 
+        { 
+            get {
+                return new Color(0, 0, 1f, 0.25f);
+            } 
+        }
+
         public static void LoadRooms(string roomsPath, Action<string> action)
         {
             List<string> rooms = new List<string>();

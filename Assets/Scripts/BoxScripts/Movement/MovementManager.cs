@@ -15,14 +15,14 @@ namespace BoxScripts
             storage = new Dictionary<string, MovGroup>();
         }
 
-        public string CreateMov(Transform tr, DataPackage data, float speed = 1f, bool rotate = false, bool scalate = false)
+        public string CreateMov(Transform tr, DataPackage data, float speed = 1f, bool move = true, bool rotate = false, bool scalate = false)
         {
             string Identifier = Guid.NewGuid().ToString();
             MovGroup group = new MovGroup(
                 tr,
                 new DataPackage(tr),
                 data,
-                new Mov(speed, rotate, scalate)
+                new Mov(speed, move, rotate, scalate)
             );
             storage.Add(Identifier, group);
             StartCoroutine(group.mov.Execute(group.t, group.data1, group.data2));
@@ -42,7 +42,16 @@ namespace BoxScripts
         {
             if(!storage.ContainsKey(id)) return;
             MovGroup group = storage[id];
-            StartCoroutine(group.mov.Execute(group.t, group.data2, group.data1));
+
+            storage[id] = new MovGroup(
+                group.t,
+                new DataPackage(group.t),
+                group.data1,
+                group.mov
+            );
+            group = storage[id];
+
+            StartCoroutine(group.mov.Execute(group.t, group.data1, group.data2));
         }
 
         public void Remove(string id)

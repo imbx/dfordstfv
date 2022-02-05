@@ -68,13 +68,20 @@ namespace BoxScripts
         public void AddAction(string guid)
         {
             if(!CurrentActions.Contains(guid))
+            {
                 CurrentActions.Add(guid);
+                SetBusy(guid, true);
+            }
+                
         }
 
         public void RemAction(string guid)
         {
             if(CurrentActions.Contains(guid))
+            {
                 CurrentActions.Remove(guid);
+                SetBusy(guid, false);
+            } 
         }
 
         public bool isActionInUse(string guid)
@@ -92,16 +99,16 @@ namespace BoxScripts
             return finalState;
         }
 
-        public bool GetASBool(string guid)
+        public bool IsBusy(string guid)
         {
             ActionState action = SearchActionState(guid);
-            return (action != null) ? action.isActive : false;
+            return (action != null) ? action.isBusy : false;
         }
 
-        public void SetASBool(string guid, bool active = false)
+        public void SetBusy(string guid, bool active = false)
         {
             ActionState action = SearchActionState(guid);
-            if(action != null) action.isActive = active;
+            if(action != null) action.isBusy = active;
         }
 
         public int GetASInt(string guid)

@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: ActionDB
   m_EditorClassIdentifier: 
   Data:
-  - Identifier: 4780f843-c913-402a-996b-faf22eaeebc6
-    isActive: 1
-    state: 0
   - Identifier: 64ca532d-87d0-4275-9077-8a07d4deb8f1
-    isActive: 0
+    isBusy: 0
     state: 0
   - Identifier: 050c9997-68d3-4f81-b1fe-9b69398b529d
-    isActive: 0
+    isBusy: 0
     state: 0
   - Identifier: 4ad8670a-c457-45b2-8e60-36aa0d46bd5c
-    isActive: 0
+    isBusy: 0
     state: 0
   - Identifier: cdef031a-a44b-4d2d-913a-4359b4dec190
-    isActive: 0
+    isBusy: 0
+    state: 0
+  - Identifier: 6d5b74a5-88b1-40ec-826e-3ca4c7260118
+    isBusy: 0
+    state: 0
+  - Identifier: 30dc389f-2f42-4a27-9512-d14a32b9d715
+    isBusy: 0
     state: 0
