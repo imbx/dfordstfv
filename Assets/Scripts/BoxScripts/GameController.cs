@@ -6,6 +6,7 @@ namespace  BoxScripts
     public class GameController : MonoBehaviour {
         public static GameController instance;
         public AdditiveScenes additiveScenes;
+        public GameControllerObject gco; 
         public DBManager Database;
 
         private void Awake() {

@@ -5,6 +5,7 @@ using BoxScripts;
 public class GameControllerObject : ScriptableObject {
     // public GameState state = GameState.LOADGAME;
     public Camera camera;
+    public LookItem lookItem;
     public bool requireFocus = true;
     public bool justChangedState = false;
     public string playerTargetTag = "";
